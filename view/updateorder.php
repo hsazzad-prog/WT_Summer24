@@ -3,6 +3,9 @@ include '../control/updateordercontrol.php';
 ?>
 <html>
 <body>
+    <?php 
+        include '../route/profileRouter.php';
+    ?>
 
 Update Order
 <form action="" method="post">

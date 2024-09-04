@@ -5,6 +5,10 @@ include '../control/userlogincontrol.php';
 <html>
 <body>
 
+<?php 
+    include '../route/router.php';
+?>
+
 <form action="" method="post">
 email:
 <input type="text" name="email" >

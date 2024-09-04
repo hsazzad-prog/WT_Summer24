@@ -9,6 +9,9 @@ require '../control/process.php';
   <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 <body>
+    <?php
+        include '../route/profileRouter.php';
+    ?>
     <form action="" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Order Information</legend>
