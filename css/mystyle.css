@@ -1,0 +1,21 @@
+.button {
+    width:100px;
+    border-radius:5px;
+    }
+    .submit{
+    background-color:green;
+    }
+    .reset{
+    background-color:red;
+    }
+    .update{
+    background-color:blue;
+    }
+    .delete{
+    background-color: yellow;
+    }
+
+    label{
+    color:gray;
+    font-size: 20px;
+    }

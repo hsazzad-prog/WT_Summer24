@@ -1,11 +1,15 @@
+<?php
+require '../control/process.php'; 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Order Form</title>
-  
+  <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 <body>
-    <form action="success.php" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Order Information</legend>
             <table>
@@ -21,7 +25,9 @@
                 </tr>
                 <tr>
                     <td><label for="quantity">Quantity:</label></td>
-                    <td><input type="number" id="quantity" name="quantity" ></td>
+                    <td><input type="number" id="quantity" name="quantity" >
+                <?php echo $quantitymsg; ?>
+                </td>
                 </tr>
                 <tr>
                     <td><label for="fullname">Full Name:</label></td>
@@ -30,6 +36,10 @@
                 <tr>
                     <td><label for="email">Email Address:</label></td>
                     <td><input type="email" id="email" name="email" ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" ></td>
                 </tr>
                 <tr>
                     <td><label for="phone">Phone Number:</label></td>
@@ -78,9 +88,13 @@
                    
                 </tr>
                 <tr>
+                    <td>Upload file</td>
+                    <td><input type="file" name="myfile"></td>
+</tr>
+                <tr>
                     <td >
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
+                        <input type="submit" class="button submit" name ="Submit" value="Submit">
+                        <input type="reset" class="button reset" value="Reset">
                     </td>
                 </tr>
             </table>

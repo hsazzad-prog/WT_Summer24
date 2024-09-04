@@ -1,3 +1,18 @@
+<?php
+session_start();
+setcookie("status", "true", time()+((84600*7)));
+
+if(isset($_COOKIE["status"]))
+{
+    echo "you have visited me before";
+}
+else{
+    echo "Welcome !!";
+}
+echo $_SESSION["email"];
+
+?>
+
 <html>
 <head>
     <title> Home </title>
