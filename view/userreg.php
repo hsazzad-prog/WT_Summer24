@@ -4,6 +4,10 @@ include '../control/userregcontrol.php';
 <html>
 <body>
 
+<?php 
+    include '../route/router.php';
+?>
+
 <form action="" method="post">
     name:
 <input type="text" name="name" >
