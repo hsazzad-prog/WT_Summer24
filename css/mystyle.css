@@ -1,11 +1,14 @@
 .button {
-    width:100px;
+    width:120px;
     border-radius:5px;
+    background-color:purple;
     }
     .submit{
+        color: white;
     background-color:green;
     }
     .reset{
+        color: white;
     background-color:red;
     }
     .update{
@@ -19,3 +22,29 @@
     color:gray;
     font-size: 20px;
     }
+
+.header{
+font-family: 'Courier New', Courier, monospace;
+color: rgb(33, 27, 19);
+}
+.big{
+    font-size: 80px;
+}
+.small{
+    font-size: 40px;
+}
+.red{
+    color: red;
+}
+.yellow
+{
+    color: yellow;
+}
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+  }

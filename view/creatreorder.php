@@ -9,6 +9,7 @@ require '../control/process.php';
   <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 <body>
+<?php include "../layout/header.php"; ?>
     <form action="" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Order Information</legend>
