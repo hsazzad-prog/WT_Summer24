@@ -10,7 +10,8 @@ require '../control/process.php';
 </head>
 <body>
 <?php include "../layout/header.php"; ?>
-    <form action="" method="POST" enctype="multipart/form-data">
+<p id="title">My Page </p>
+    <form action="" method="POST" enctype="multipart/form-data" onsubmit="return formValidation()">
         <fieldset>
             <legend>Order Information</legend>
             <table>
@@ -27,7 +28,7 @@ require '../control/process.php';
                 <tr>
                     <td><label for="quantity">Quantity:</label></td>
                     <td><input type="number" id="quantity" name="quantity" >
-                <?php echo $quantitymsg; ?>
+                <?php echo $quantitymsg; ?><p id="quantityError"></p>
                 </td>
                 </tr>
                 <tr>
@@ -101,6 +102,8 @@ require '../control/process.php';
             </table>
         </fieldset>
     </form>
+<script src="../js/myscript.js">
+</script>
 </body>
 </html>
 <?php
