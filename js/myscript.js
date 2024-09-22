@@ -20,3 +20,19 @@ function checkQuantity(){
     }
 
 }
+
+function searchOrder(){
+
+var order = document.getElementById("search").value;
+console.log(order);
+var xttp= new XMLHttpRequest();
+
+xttp.onreadystatechange = function () {
+if(this.readyState==4 && this.status==200)
+    document.getElementById("show").innerHTML = this.responseText;
+};
+
+
+xttp.open("GET","../control/ajaxrequest.php?search="+order,true);
+xttp.send();
+}
